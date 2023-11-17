@@ -4,11 +4,11 @@ A trained model which can predict the employee performance based on factors as i
 From Correlation we can get the important aspects of the data, Correlation between features and Performance Rating.Correlation is a statistical measure that expresses the extent to which two variables are linearly related.The analysis of the project has gone through the stage of Univariate,Bivariate & Multivariate analysis, correlation analysis and analysis by each department to satisfy the project goal.
 
 The dataset consists of Categorical data and Numerical data. The Target variable consist of ordinal data, so this is a classification problem.The multiple machine learning model used in this project is Support vector classifier, Random forest classifier & Artifical neural network[Multilayer percepton]. from above all models Artifical neural network[Multilayer percepton] predicts higher accuracy 97%.
-1. Requirement
+**1. Requirement**
 
 The data was given from the IABAC for this project where the collected source is IABAC™. The data is based on INX Future Inc, (referred as INX ). It is one of the leading data analytics and automation solutions provider with over 15 years of global business presence. INX is consistently rated as top 20 best employers past 5 years. The data is not from the real organization. The whole project was done in Jupiter notebook with python platform.
 
-2. Analysis
+**2. Analysis**
 
 Data were analyzed by describing the features present in the data. the features play the bigger part in the analysis. The features tell the relation between the dependent and independent variables. Pandas also help to describe the datasets answering following questions early in our project. The data present in the dataset are divided into numerical and categorical data.
 
@@ -18,7 +18,7 @@ Numerical Features Age DistanceFromHome EmpHourlyRate NumCompaniesWorked EmpLast
 
 Ordinal Features EmpEducationLevel EmpEnvironmentSatisfaction EmpJobInvolvement EmpJobLevel EmpJobSatisfaction EmpRelationshipSatisfaction EmpWorkLifeBalance PerformanceRating
 
-3.Univariate, Bivariate & Multivariate Analysis
+**3.Univariate, Bivariate & Multivariate Analysis**
 
 Library Used: Matplotlib & Seaborn
 
@@ -34,7 +34,7 @@ Multivariate Analysis: In multivariate Analysis check the relationship between t
 
 CONCLUSION There are some features are positively correlated with performance rating( Target variable) [Emp Environment Satisfaction,Emp Last Salary Hike Percent,Emp Work Life Balance]
 
-4.Explotary Data Analysis
+**4.Explotary Data Analysis**
 
 Basic Check & Statistical Measures* Their is no constant column is present in Numerical as well as categoriacl data.
 
@@ -56,7 +56,7 @@ Distribution of mean close to guassian distribution with mean value 9.5
 we can say that around 80% feature mean lies between 8.5 to 10.5
 Distribution of Standard Deviation of Data
 Distribution of standard deviation of data also look like guassian distribution around 30% of feature standard deviation around the range of 3 3 to 20 and remaining 70% feature standard deviation in between 0 to 2
-5.Data Pre-Processing
+**5.Data Pre-Processing**
 
 Check Missing Value: Their is no missing value in data
 
@@ -74,7 +74,7 @@ Square root transformation: Square root transformation is one of the many types 
 Q-Q Plot: Q–Q plot is a probability plot, a graphical method for comparing two probability distributions by plotting their quantiles against each other.
 Scaling The Data: scaling the data with the help of Standard scalar
 Standard Scaling: Standardization is the process of scaling the feature, it assumes the feature follow normal distribution and scale the feature between mean and standard deviation, here mean is 0 and standard deviation is always 1.
-6.Future Selection
+**6.Future Selection**
 
 Drop unique and constant feature: Dropping employee number because this is a constant column as well as drop Years Since Last Promotion because we create a new feaure using square root transformation
 
@@ -89,7 +89,7 @@ PCA: Use pca to reduce the dimension of data, Data is contain total 27 feature a
 Principal component analysis (PCA) is a popular technique for analyzing large datasets containing a high number of dimensions/features per observation, increasing the interpretability of data while preserving the maximum amount of information, and enabling the visualization of multidimensional data. Formally, PCA is a statistical technique for reducing the dimensionality of a dataset.
 
 Saving Pre-Process Data: save the all preprocess data in new file and add target feature to it.
-7.Machine learning Model Creation & Evaluation
+**7.Machine learning Model Creation & Evaluation**
 
 Define Dependant and Independant Features:
 
